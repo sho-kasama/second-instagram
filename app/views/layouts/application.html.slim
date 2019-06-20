@@ -9,7 +9,8 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
 
-    = render 'partial/navbar'
+    = render 'partial/navbar' if current_user
     = render 'partial/footer'
+    = render 'partial/flash'
           
     = yield
