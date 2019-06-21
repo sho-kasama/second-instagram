@@ -7,8 +7,9 @@ html
       | SecondInstagram
   body
 
-    = render 'partial/navbar'
-
+    = render 'partial/navbar' if current_user
+    = render 'partial/footer' 
+    = render 'partial/flash'
           
     = yield
 
