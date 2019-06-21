@@ -2,6 +2,6 @@
   .alert.alert-info
     = flash[:notice]
 
-= if flash[:notice]
-  .alert.alert-danger
-    = flash[:alert]
+    = if flash[:notice]
+    .alert.alert-danger
+        = flash[:alert]

@@ -1,18 +1,20 @@
-h2
-  | Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    br
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    br
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+.main
+  .card.devise-card
+    .form-wrap
+      .form-gruop.text-center
+        h2.logo-img.mx-auto
+      
+      = form_with scope: resource, as: resource_name, url: session_path(resource_name), local: true do |f|
+        = devise_error_messages!
+        .form-gruop
+          = f.email_field :email, autofocus: true, placeholder: "メールアドレス", class: "form-control mt-5"
+        
+        .form-gruop
+          = f.password_field :password, autofocus: "off", placeholder: "パスワード", class: "form-control mt-4"
+
+        .actions
+          = f.submit "サインインする", class: "btn btn-primary w-100 mt-4"
+
+      p.devise-link
+        アカウントをお持ちでないですか？
+        = link_to "登録する", new_user_registration_path
