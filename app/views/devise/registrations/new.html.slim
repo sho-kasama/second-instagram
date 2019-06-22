@@ -27,3 +27,4 @@
       p.devise-link
         アカウントをお持ちですか？
         = link_to "サインインする", new_user_session_path 
+        = link_to "facebook登録の方はこちら",user_facebook_omniauth_authorize_path, class: "post"

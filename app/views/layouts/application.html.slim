@@ -6,7 +6,9 @@ html
     title
       | SecondInstagram
   body
-
+    = render 'partial/javascript'
+  
+    
     = render 'partial/navbar' if current_user
     = render 'partial/footer' 
     = render 'partial/flash'
