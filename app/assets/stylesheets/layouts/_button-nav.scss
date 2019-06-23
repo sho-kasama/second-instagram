@@ -1,0 +1,25 @@
+.bottom-nav {
+    display: none;
+
+    @include small {
+        z-index: 10;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        height: 48px;
+        background: $white;
+        border-top: 1px solid $light-brown;
+    }
+
+    &__item {
+        @include flex-around;
+
+        width: calc(100% / 3);
+        height: 100%;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}

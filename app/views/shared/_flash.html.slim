@@ -1,0 +1,7 @@
+- flash.each do |message_type, message|
+  - if request.path == root_path
+    .flash.flash--top
+      = message
+  - else
+    .flash
+      = message
