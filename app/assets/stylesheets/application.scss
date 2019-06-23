@@ -1,13 +1,17 @@
 @import "bootstrap";
 
 
-/* layouts */
-@import "layouts/footer";
-@import "layouts/navbar";
-@import "layouts/devise";
-
-
 /* foundation */
 @import "foundation/base";
+@import "foundation/mixin";
 @import "foundation/reset";
 @import "foundation/variable";
+
+
+
+/* layouts */
+@import "layouts/button-nav";
+@import "layouts/devise";
+@import "layouts/footer";
+@import "layouts/info";
+@import "layouts/header";

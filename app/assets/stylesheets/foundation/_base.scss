@@ -5,34 +5,38 @@ body {
     font-size: 16px;
     font-family: 'Noto Sans JP', sans-serif;
 
-  }
-  
-  a {
+}
+
+a {
     color: $black;
     text-decoration: none;
-  }
-  
-  input[type='text'], input[type='file'], input[type='email'], input[type='password'], input[type='submit'], textarea {
+}
+
+input[type='text'],
+input[type='file'],
+input[type='email'],
+input[type='password'],
+input[type='submit'],
+textarea {
     appearance: none;
     -webkit-appearance: none;
-  
+
     &:focus {
-      outline: 0;
+        outline: 0;
     }
-  }
-  
-  input[type='file'] {
+}
+
+input[type='file'] {
     display: none;
-  }
-  
-  // 文字選択時の背景色
-  ::selection {
+}
+
+// 文字選択時の背景色
+::selection {
     color: $white;
     background: $blue;
-  }
-  
-  ::-moz-selection {
+}
+
+::-moz-selection {
     color: $white;
     background: $blue;
-  }
-  
+}
