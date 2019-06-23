@@ -1,3 +1,7 @@
-footer.footer.footer-mt-auto.footer-py-3
-  .container
-    span.text-muted footer
+footer.footer
+  .footer__nav
+    = link_to 'SecandGramとは', root_path, class: 'footer__nav__item'
+    = link_to 'お問い合わせ', root_path, class: 'footer__nav__item'
+    = link_to '利用規約', root_path, class: 'footer__nav__item'
+    = link_to 'プライバシーポリシー', root_path, class: 'footer__nav__item'
+  .footer__copy &copy;2019 SecandGram All Rights Reserved.
