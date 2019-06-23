@@ -2,11 +2,29 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-bottom: 5px;
-    line-height: 20px;
-    /* Vertically center the text there */
-    background-color: rgba(109, 155, 255, 0.89);
-    font-size: 80%;
+    height: 160px;
+    padding: 40px 0;
+    color: $white;
+    font-size: 14px;
     text-align: center;
-    height: 75px;
+    background: $reiwa;
+    box-sizing: border-box;
+
+    @include small {
+        display: none;
+    }
+
+    &__nav {
+        margin-bottom: 40px;
+
+        &__item {
+            padding: 0 40px;
+            color: $white;
+            border-right: 1px solid $white;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
 }
