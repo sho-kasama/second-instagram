@@ -11,7 +11,8 @@ html
 
     = render 'partial/header' if current_user
     = render 'shared/flash'
-          
-    = yield
+    
+    .container
+      = yield
 
     = render 'partial/footer'
