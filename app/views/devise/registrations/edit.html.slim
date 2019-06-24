@@ -12,9 +12,9 @@
             = f.text_field :user_name, autofoucus: true, class: 'form-control'
 
           .form-group
-            = f.label :websaite, "ウェブサイト"
+            = f.label :url, 'URL'
+            = f.text_field :url, placeholder: '例）https://sekandgram.heroku.com', class: 'form-control'
 
-          .p 非公開情報 
           .form-group
             = f.label :email, "メールアドレス"
             = f.email_field :email, autofoucus: true, class: 'form-control'
