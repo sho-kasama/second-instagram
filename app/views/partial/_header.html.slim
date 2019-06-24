@@ -5,7 +5,7 @@ header.header.header--pc
       = link_to root_path, class: 'header__nav__item' do
         i.fa.fa-search
       - if user_signed_in?
-        = link_to root_path, class: 'header__nav__item' do
+        = link_to user_path(current_user), class: 'header__nav__item' do
          i.fa.fa-user-alt
         = link_to '新規投稿', root_path, class: 'header__nav__item btn--header'
       - else
