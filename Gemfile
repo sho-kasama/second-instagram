@@ -9,6 +9,10 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+# carriewave をインストールする時、railsのバージョンが5.0以上なら2.0以降をインストールする
+gem 'carrierwave'
+gem 'mini_magick'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
